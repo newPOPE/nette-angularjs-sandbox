@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "angular": "~1.0.4"
+    "angular": "~1.0.4",
+    "jquery": "~1.8.2",
+    "bootstrap.css": "2.1.1"
   }
 }
