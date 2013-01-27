@@ -2,14 +2,11 @@
 
 namespace App;
 
-use Nette,
-	Model;
+use Nette;
 
+abstract class BasePresenter extends Nette\Application\UI\Presenter {
 
-/**
- * Base presenter for all application presenters.
- */
-abstract class BasePresenter extends Nette\Application\UI\Presenter
-{
-
+  public function templatePrepareFilters($template) {
+    \AngularJSMacros::install($template);
+  }
 }
