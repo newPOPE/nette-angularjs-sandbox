@@ -1,6 +1,7 @@
 src/log/*
 src/temp/*
 src/libs/*
+src/www/components/*
 
 .DS_Store
 !.gitignore
