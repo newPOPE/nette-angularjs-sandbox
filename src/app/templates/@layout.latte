@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="robots" content="{$robots}" n:ifset="$robots">
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="robots" content="{$robots}" n:ifset="$robots">
 
-	<title></title>
+  <title></title>
 
-	<link rel="stylesheet" media="all" href="{$basePath}/components/bootstrap.css/css/bootstrap.css">
-	<link rel="stylesheet" media="all" href="{$basePath}/css/screen.css">
-	{#head}{/#}
+  <link rel="stylesheet" media="all" href="{$basePath}/components/bootstrap.css/css/bootstrap.css">
+  <link rel="stylesheet" media="all" href="{$basePath}/css/screen.css">
+{#head}{/#}
 </head>
 
 <body>
-  <noscript>Enable your JavaScript!</noscript>
-  <div class="container">
-  {include #content}
-  </div>
+<noscript>Enable your JavaScript!</noscript>
 
-	{#scripts}
-	<script src="{$basePath}/components/jquery/jquery.js"></script>
-	<script src="{$basePath}/components/angular/angular.js"></script>
-	{/#}
+<div class="container">
+  <div class="row">
+    <h1 class="hero-unit">Nette & AngularJS</h1>
+  </div>
+</div>
+<div class="container">
+  <ul class="nav nav-pills">
+    <li ng-repeat="hash in ['/', '/lists']" active-class="{ng hash}">
+      <a ng-href="#{ng hash}">{ng hash}</a>
+    </li>
+  </ul>
+  <div ng-view=""></div>
+</div>
+
+{#scripts}
+<script src="{$basePath}/components/jquery/jquery.js"></script>
+<script src="{$basePath}/components/angular/angular.js"></script>
+<script src="{$basePath}/js/app.config.js"></script>
+<script src="{$basePath}/js/directives/activeClass.js"></script>
+<script src="{$basePath}/js/app.start.js"></script>
+{/#}
 </body>
 </html>
