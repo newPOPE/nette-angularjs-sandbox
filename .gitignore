@@ -1,0 +1,9 @@
+src/log/*
+src/temp/*
+src/libs/*
+
+.DS_Store
+!.gitignore
+!.htaccess
+!web.config
+src/app/config/config.local.neon

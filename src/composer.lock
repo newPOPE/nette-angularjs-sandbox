@@ -1,0 +1,88 @@
+{
+    "hash": "0c575d893558a8f4d9007d4c4cad3432",
+    "packages": [
+        {
+            "name": "nette/nette",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/nette/nette",
+                "reference": "1ef0abfc8a3f8db7382248efa9a56152b3b67b39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/nette/nette/archive/1ef0abfc8a3f8db7382248efa9a56152b3b67b39.zip",
+                "reference": "1ef0abfc8a3f8db7382248efa9a56152b3b67b39",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "ext-iconv": "*",
+                "ext-tokenizer": "*"
+            },
+            "require-dev": {
+                "nette/tester": "@dev"
+            },
+            "suggest": {
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "ext-memcache": "*",
+                "ext-gd": "*",
+                "ext-fileinfo": "*"
+            },
+            "time": "1358877160",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "files": [
+                    "Nette/loader.php"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "http://nette.org/contributors"
+                }
+            ],
+            "description": "Nette Framework - innovative framework for fast and easy development of secured web applications in PHP. Write less, have cleaner code and your work will bring you joy.",
+            "homepage": "http://nette.org",
+            "keywords": [
+                "templating",
+                "framework",
+                "database",
+                "dbal",
+                "debugging",
+                "mvc",
+                "micro",
+                "Forms",
+                "latte",
+                "neon",
+                "mailing",
+                "images"
+            ]
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "nette/nette": 20,
+        "nette/tester": 20
+    }
+}
