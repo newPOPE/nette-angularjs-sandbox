@@ -7,8 +7,8 @@
 parameters:
 
 php:
-	date.timezone: Europe/Prague
-	# zlib.output_compression: yes
+#	date.timezone: Europe/Prague
+	zlib.output_compression: yes
 
 nette:
 	application:
@@ -21,7 +21,6 @@ nette:
 
 
 services:
-	authenticator: Model\Authenticator
 	routerFactory: App\RouterFactory
 	router: @routerFactory::createRouter
 
