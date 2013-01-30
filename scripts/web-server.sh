@@ -1,3 +1,3 @@
 #!/bin/sh
 
-php -S localhost:3000 -t ./src/www/
+php -S 0.0.0.0:3000 -t ./
