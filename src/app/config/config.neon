@@ -4,25 +4,29 @@
 # If you don't protect this directory from direct web access, anybody will be able to see your passwords.
 # http://nette.org/security-warning
 #
-parameters:
 
-php:
-#	date.timezone: Europe/Prague
-	zlib.output_compression: yes
+common:
+  parameters:
 
-nette:
-	application:
-		errorPresenter: Error
-		mapping:
-			*: App\*Module\*Presenter
+  php:
+#    date.timezone: Europe/Prague
+    zlib.output_compression: yes
 
-	session:
-		expiration: 14 days
+  nette:
+    application:
+      errorPresenter: Error
+#      catchExceptions: TRUE
 
-
-services:
-	routerFactory: App\RouterFactory
-	router: @routerFactory::createRouter
+    session:
+      expiration: 14 days
 
 
-factories:
+  services:
+    routerFactory: RouterFactory
+    router: @routerFactory::createRouter
+
+  factories:
+
+development < common:
+
+production < common:

@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" media="all" href="{$basePath}/components/bootstrap.css/css/bootstrap.css">
   <link rel="stylesheet" media="all" href="{$basePath}/css/screen.css">
-{#head}{/#}
+{block head}{/block}
 </head>
 
 <body ng-app="app">
@@ -29,11 +29,11 @@
   <div ng-view=""></div>
 </div>
 
-{#scripts}
+{block scripts}
 <script src="{$basePath}/components/jquery/jquery.js"></script>
 <script src="{$basePath}/components/angular/angular.js"></script>
 <script src="{$basePath}/js/app.config.js"></script>
 <script src="{$basePath}/js/directives/activeClass.js"></script>
-{/#}
+{/block}
 </body>
 </html>
