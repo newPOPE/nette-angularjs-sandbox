@@ -1,15 +1,23 @@
-<h2>Lists</h2>
+<div class="row">
+  <div class="span4">
+    <h2>Templates</h2>
 
-<h3>With Latte</h3>
-<ul>
-  <li n:foreach="array(1, 2, 3) as $item">
-    {$item}
-  </li>
-</ul>
-
-<h3>With AngularJS</h3>
-<ul>
-  <li ng-repeat="item in [1, 2, 3, 4]">
-    {ng item}
-  </li>
-</ul>
+    <p>Templates examples</p>
+  </div>
+  <div class="span4">
+    <h3>With Latte</h3>
+    <ul>
+      <li n:foreach="array(1, 2, 3) as $item">
+      {$item}
+      </li>
+    </ul>
+  </div>
+  <div class="span4">
+    <h3>With AngularJS</h3>
+    <ul>
+      <li ng-repeat="item in [1, 2, 3, 4]">
+      {ng item}
+      </li>
+    </ul>
+  </div>
+</div>
