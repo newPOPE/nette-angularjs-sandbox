@@ -1,9 +1,14 @@
 #!/bin/bash
 
-cd src
+# http://getcomposer.org/
 composer install
 
-cd ..
+# https://github.com/twitter/bower
 bower install
 
-echo "#Local config file" > src/app/config/config.local.neon
+# create empty local configuration file
+echo "development:" >> src/app/config/config.local.neon
+echo "" >> src/app/config/config.local.neon
+echo "production:" >> src/app/config/config.local.neon
+echo "" >> src/app/config/config.local.neon
+
