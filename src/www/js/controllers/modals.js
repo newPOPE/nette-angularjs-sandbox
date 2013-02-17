@@ -8,6 +8,6 @@ app.controller('ModalsCtrl', function ($scope) {
   };
 
   $scope.onAlertClose = function () {
-    alert('You close an Alert window.');
+    $scope.result = 'You closed an Alert window!';
   }
 });
