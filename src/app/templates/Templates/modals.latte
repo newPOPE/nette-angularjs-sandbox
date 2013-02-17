@@ -1,0 +1,10 @@
+<div class="row" ng-controller="ModalsCtrl">
+  <div class="span4">
+    <h3>Modals</h3>
+  </div>
+  <div class="span4">
+    <h3>Alert</h3>
+    <button class="btn btn-large" ng-click="runAlert()">Run!</button>
+    <div alert show="openAlert" on-close="onAlertClose()" title="Alert title" body="Alert body" button="Get It!"></div>
+  </div>
+</div>

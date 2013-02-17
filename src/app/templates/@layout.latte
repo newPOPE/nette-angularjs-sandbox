@@ -7,7 +7,7 @@
 
   <title ng-bind="title"></title>
 
-  <link rel="stylesheet" media="all" href="{$basePath}/components/bootstrap.css/css/bootstrap.css">
+  <link rel="stylesheet" media="all" href="{$basePath}/components/bootstrap-assets/css/bootstrap.css">
   <link rel="stylesheet" media="all" href="{$basePath}/css/screen.css">
 {block head}{/block}
 </head>
@@ -16,8 +16,8 @@
 <noscript>Enable your JavaScript!</noscript>
 
 <div class="container">
-  <div class="row">
-    <h1 class="hero-unit">Nette & AngularJS</h1>
+  <div class="hero-unit">
+    <h1>Nette & AngularJS</h1>
   </div>
 </div>
 <div class="container">
@@ -27,11 +27,14 @@
 
 {block scripts}
 <script src="{$basePath}/components/jquery/jquery.js"></script>
+<script src="{$basePath}/components/bootstrap-assets/js/bootstrap.js"></script>
 <script src="{$basePath}/components/angular/angular.js"></script>
 <script src="{$basePath}/js/app.config.js"></script>
 <script src="{$basePath}/js/controllers/html.js"></script>
+<script src="{$basePath}/js/controllers/modals.js"></script>
 <script src="{$basePath}/js/directives/activeClass.js"></script>
 <script src="{$basePath}/js/directives/menu.js"></script>
+<script src="{$basePath}/js/directives/alert.js"></script>
 {/block}
 </body>
 </html>
