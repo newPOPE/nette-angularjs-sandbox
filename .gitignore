@@ -2,9 +2,11 @@ src/log/*
 src/temp/*
 src/libs/*
 src/www/components/*
+src/www/css/*
 
 .DS_Store
 !.gitignore
 !.htaccess
 !web.config
 src/app/config/config.local.neon
+.sass-cache
